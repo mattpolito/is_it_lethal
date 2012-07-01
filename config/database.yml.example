@@ -1,0 +1,14 @@
+defaults: &defaults
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  username: dev
+  password: 
+
+development:
+  <<: *defaults
+  database: is_it_lethal_development
+
+test:
+  <<: *defaults
+  database: is_it_lethal_test
